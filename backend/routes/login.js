@@ -14,7 +14,7 @@ router.post("/", async (req, res) => {
       LoginUser.password
     );
     console.log(compPassword);
-    res.send();
+    res.json({ error: 'done' });
   } catch {
     console.log("it's an error");
   }
